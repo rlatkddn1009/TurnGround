@@ -45,4 +45,6 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "regFestival/")
+	public void regFestival() {}
 }
