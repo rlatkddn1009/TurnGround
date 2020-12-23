@@ -47,4 +47,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "regFestival/")
 	public void regFestival() {}
+	
+	@RequestMapping(value = "loginForm/")
+	public void loginForm() {}
 }
