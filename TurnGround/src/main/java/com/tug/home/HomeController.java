@@ -12,7 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.tug.service.AttractionService;
 import com.tug.service.TestService;
 import com.tug.vo.TestVO;
 
@@ -21,6 +24,8 @@ import com.tug.vo.TestVO;
  */
 @Controller
 public class HomeController {
+	
+	@Autowired private AttractionService as;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	@Autowired private TestService ts;
@@ -50,4 +55,14 @@ public class HomeController {
 	
 	@RequestMapping(value = "loginForm/")
 	public void loginForm() {}
+	
+	// Attraction(여행지 부분)
+	@RequestMapping(value = "/addAttraction/", method = RequestMethod.GET)
+	public String AddAttraction() {
+		return "addAttraction";
+	}
+	@RequestMapping(value = "/addAttraction/", method = RequestMethod.POST)
+	public ModelAndView AddAttractionPost(MultipartHttpServletRequest req) {
+		return as.AddAttraction(req);
+	}
 }
