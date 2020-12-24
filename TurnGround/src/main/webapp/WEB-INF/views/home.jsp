@@ -16,6 +16,6 @@
 <hr>
 <h2><a href="${cpath }/loginForm/">login</a></h2>
 <h2><a href="${cpath }/regFestival/">Festival</a></h2>
-<h2>왔다감 -jic-</h2>
+<h2><a href="${cpath }/addAttraction/">여행지 추가</a></h2>
 </body>
 </html>
