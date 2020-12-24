@@ -53,9 +53,6 @@ public class HomeController {
 	@RequestMapping(value = "regFestival/")
 	public void regFestival() {}
 	
-	@RequestMapping(value = "loginForm/")
-	public void loginForm() {}
-	
 	// Attraction(여행지 부분)
 	@RequestMapping(value = "/addAttraction/", method = RequestMethod.GET)
 	public String AddAttraction() {

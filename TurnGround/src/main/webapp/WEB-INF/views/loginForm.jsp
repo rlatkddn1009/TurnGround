@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${cpath }/css/login.css" />
 <style type="text/css">
 .login-form {
     width: 340px;
@@ -16,7 +17,7 @@
     background: #f7f7f7;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 30px;
-}
+} */
 .login-form h2 {
     margin: 0 0 15px;
 }
@@ -54,6 +55,8 @@
 				</label> <a href="#" class="float-right">비밀번호 찾기</a>
 			</div>
 		</form>
+		<p class="text-center">
+    <a href="${pageContext.request.contextPath }/loginForm/loginJoin/">회원 가입</a></p>
 	</div>
 </body>
 </html>
