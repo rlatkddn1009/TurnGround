@@ -28,6 +28,7 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:config/sqlmap-test.xml</value>
+				<value>classpath:config/sqlmap-login.xml</value>
 			</list>
 		</property>
 	</bean>
